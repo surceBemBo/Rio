@@ -1,4 +1,4 @@
-#!/usr/bin/env/bash 
+#!/usr/bin/env bash 
  THIS_DIR=$(cd $(dirname $0); pwd) 
  Version=`lsb_release -rs | cut -f1 -d"."` 
  cd $THIS_DIR 
