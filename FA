@@ -20,7 +20,7 @@
  if [ "$1" == "F" ]; then 
  while(true) do 
  sudo rm -fr ~/.telegram-cli 
- ./tg -s ./FAEDER.lua $@ --bot=$Token 
+ ./tg -s ./Texas.lua $@ --bot=$Token 
  done 
  else 
  if ! screen -list | grep -q "$BotUser"; then 
