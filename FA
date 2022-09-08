@@ -2,7 +2,7 @@
  cd $(cd $(dirname $0); pwd) 
   
  if [ ! -f "./FA.txt" ]; then 
- lua ./FAEDER.lua 
+ lua ./Texas.lua 
  exit; 
  else 
  Token=`cat ./FA.txt` 
@@ -10,7 +10,7 @@
  BotUser=$(redis-cli get ${BotId}:BotUser:) 
  if [[ $BotUser == "" ]]; then 
  rm -fr ./FA.txt 
- lua ./FAEDER.lua 
+ lua ./Texas.lua 
  exit; 
  fi 
  fi 
