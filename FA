@@ -24,9 +24,9 @@
  done 
  else 
  if ! screen -list | grep -q "$BotUser"; then 
- screen -S $BotUser ./FA  
+ screen -S $BotUser ./FA F 
  else 
  screen -X -S $BotUser quit 
- screen -S $BotUser ./FA  
+ screen -S $BotUser ./FA F 
  fi 
  fi
